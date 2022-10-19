@@ -39,7 +39,7 @@ unique_model = pd.unique(
 )
 
 model_input = st.selectbox("Model", unique_model)
-mile_input = st.slider("Mile", 1000, 1000000, 1000)
+mile_input = st.slider("Mile", 1000, 500000, 1000)
 year_input = st.slider("Year", 2000, 2030)
 thisyear = 2022
 car_age_input = 2022 - year_input
