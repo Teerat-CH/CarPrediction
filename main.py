@@ -48,7 +48,7 @@ for i, j in carid_map.items():
     if i == model_input:
         id_input = j
 #Predict
-output = (reg.predict(np.array([[id_input, year_input, mile_input, car_age_input]]))).round()
+output = (reg.predict(np.array([[id_input, year_input, mile_input, car_age_input]]))).astype(int)
 
 #Output
 st.write("#### Predicted Price(THB)")
